@@ -16,6 +16,11 @@
 
                     {{ $entry->content }}
                 </div>
+
+                <div class="card-footer">
+                    Autor:
+                    <a href="{{ url('@').$entry->user->username}}">{{ $entry->user->name}}</a>
+                </div>
             </div>
             <!--@if($entry->user_id == auth()->id())
                 <hr>
